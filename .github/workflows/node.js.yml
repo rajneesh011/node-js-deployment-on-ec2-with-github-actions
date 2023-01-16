@@ -22,8 +22,10 @@ jobs:
         port: ${{ secrets.PORT }}
         key: ${{ secrets.KEY  }}
         
-        script: main.sh
-          
+        run: |
+          chmod +x main.sh
+          ./main.sh
+        shell: bash
           
           
           
